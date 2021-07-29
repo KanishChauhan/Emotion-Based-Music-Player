@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+    <title>Songo King</title>
+  </head>
+  <body>
+   <!--Header section-->
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top  cloudy-knoxville-gradient" style="background-color:white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="{{url_for('static', filename='logo.jpg')}}" class="rounded-circle" width="70" height="70"></a>
+            <div class="justify-content-center col3">
+                    
+                    <p class="text-center navbar-brand xbootstrap" ><h1>EMOTION BASED MUSIC PLAYER</h1></p>
+                
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-pills nav-tabs" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-items pill-1"><a class="nav-link " href="index.html">Home</a></li>
+                    <li class="nav-items pill-1"><a class="nav-link " href="property.html">About</a></li>
+                    <li class="nav-items pill-1"><a class="nav-link " href="checkout.html">Login/Register</a></li>
+                </ul>
+            </div>
+        </div>
+            
+    </nav>
+    </header>
+   <!--Header end-->
+   <!--backgroung image-->
+   <section >
+
+<!--       <div class="text-center">
+        <img class="rounded" src="{{url_for('static', filename='face.jpg')}}" alt="First slide" width = '400' height="400">
+        </div> -->
+
+  </section>
+<section>
+	<div class="m-3">
+		<div class="text-center">
+                <div class="service-details mb-4">
+                    <h3><a>Your Playlist is like: </a></h3>
+<!--                     <form action="{{url_for('playlist')}}", methods="POST">
+                    	<input type="submit" class="btn btn-outline-dark btn-lg" value="GET PLAYLIST">
+                    </form> -->
+                <div class="table-responsive text-center">
+                    <table class="table ">
+                    	<tr class = "table-hover align-middle table-dark">
+                <th>Title</th>
+                <th>Singer</th>
+                <th>Link</th>
+            </tr>
+  					{% for user in userDetails %}
+ 					 <tr classs="table-hover align-middle table-light">
+    					<td> {{user[0]}} </td>
+    					<td> {{user[2]}} </td>
+    					<!-- <td> {{user[3]}} </td> -->
+    					<td> <a href="{{user[1]}}" target="_blank"><img src="/static/play.png" class="img-responsive" width="10%", height="auto"></a></td>
+  					</tr>
+  					{% endfor %}
+					</table>
+				</div>
+
+            </div>
+
+	</div>
+</section>
+<footer>
+<div class="container-fluid padding ">
+    <div class="row text-center">
+        <div class="col-md-4 text-light">
+            <hr class="style1">
+                <h4>Explore</h4>
+            <hr class="style1">
+            <p><a class="text-light" href="index.html">Home</a></p>
+            <p><a class="text-light" href="property.html">About</a></p>
+            <p><a class="text-light" href="checkout.html">Login/Register</a></p>
+        </div>
+        <div class="col-md-4 text-light">
+            <hr class="style1">
+            <h4>Follow us on</h4>
+            <hr class="style1">
+            <div class="container-fluid d-flex flex-row justify-content-center ">
+              <img src="{{url_for('static', filename='insta.png')}}"    class="rounded img1" width="50px" height="50px">
+              <img src="{{url_for('static', filename='facebook.png')}}" class="rounded img1" width="50px" height="50px">
+              <img src="{{url_for('static', filename='google.png')}}"   class="rounded img1" width="50px" height="50px">
+            </div>
+        </div>
+        <div class="col-md-4 text-light">
+            <hr class="style1">
+            <h4>Contacts</h4>
+            <hr class="style1">
+            <p><a class="text-white" href="#">co183330@ccet.ac.in</a>   +91 568 236 154</p>
+            <p><a class="text-white" href="#">co183336@ccet.ac.in</a>   +91 568 236 154</p>
+            <p><a class="text-white" href="#">co183337@ccet.ac.in</a>   +91 568 236 154</p>
+            
+        </div>
+        <div class="col-12">
+            <hr class="style1">
+            <p class="text-light">Copyright &copy; Website Created by Prince</p>
+        </div>
+    </div>
+</div>
+</footer>
+<!--footer end-->   
+  </body>
+</html>

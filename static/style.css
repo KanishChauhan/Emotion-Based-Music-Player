@@ -1,0 +1,135 @@
+a{
+    text-decoration: none;
+}
+header{
+    
+}
+.col3{
+    width: 50%;
+    text-align: center;
+}
+.service-image {
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 35px;
+    background: #ddd;
+}
+.service-details h4 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 55px;
+    text-transform: uppercase;
+}
+.nav-pills .pill-1 .nav-link:not(.active) {
+    background-color:white;
+    color:black;
+   
+}
+
+/* active (faded) */
+.nav-pills .pill-1 .nav-link {
+    background-color:#1c2a48;
+    color:black;
+    
+}
+.nav-pills .pill-1 .nav-link:hover {
+    background-color:#1c2a48;
+    border: 1px solid black;
+    color: white;
+    transition: 1s ea;
+    
+}
+
+.full{
+    height: 400px;;
+}
+.xbootstrap {
+    color: #202020;
+    background-color: #2d2d2d;
+    letter-spacing: .1em;
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+  }
+
+.text{
+ color:#fafafa;
+}
+.container{
+    /*padding-top: 20px;*/
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+.row{
+    padding-top: 40px;
+}
+.padding{
+    padding-bottom: 15px;;
+}
+.w-100{
+    height: 85vh;
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    /*background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+    background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);*/
+    background:#1c2331;
+  }
+  
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding: 3em;
+    text-align: left;
+  }
+  
+  .hovereffect img {
+    position: relative;
+    max-width: none;
+    height: 300px;
+    width: calc(100% + 60px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+    transition: opacity 0.35s, transform 0.45s;
+    -webkit-transform: translate3d(-40px,0,0);
+    transform: translate3d(-40px,0,0);
+  }
+  .inside{
+      opacity: 0;
+      overflow:hidden;
+      transition: 0.5s ease-in;
+      align-self: center;
+      
+  }
+  .hovereffect:hover img {
+    opacity: 0.4;
+    transform: translate3d(0,0,0);
+    transform: scale(1.2);
+  }
+  .inside:hover{
+      opacity: 1;
+      
+
+  }
+  .img1{
+      padding: 10px;
+  }
+  footer{
+      background-color: #263238;
+  }
+  hr.style1{
+    border-top: 1px solid #8c8b8b;
+  }
+  
+ 
